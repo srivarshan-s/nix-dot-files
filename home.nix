@@ -158,6 +158,11 @@ require('packer').startup(function(use)
 	use 'nvim-lualine/lualine.nvim'
     -- Gruvbox color scheme
     use 'sainnhe/gruvbox-material'
+    -- Rose-pine color scheme
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     -- Undo tree
@@ -337,7 +342,7 @@ vim.keymap.set('n', '<leader>ff', builtin.live_grep, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 
 -- COLORSCHEME
-vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme("rose-pine")
 
 -- TREESITTER
 require'nvim-treesitter.configs'.setup {
