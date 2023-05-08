@@ -66,6 +66,10 @@ bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
+# SPLIT WINDOWS WITH PREFIX+h AND PREFIX+v
+bind-key v split-window -h
+bind-key h split-window -v
+
 # SWITCH WINDOWS WITH ALT-NUM, WITHOUT PREFIX
 bind-key -n M-1 select-window -t 1
 bind-key -n M-2 select-window -t 2
