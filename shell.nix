@@ -31,10 +31,8 @@ in
 
 pkgs.mkShell {
     packages = [ 
-        # Add nixpkgs
         pkgs.google-chrome
 
-        # Add python and python packages
         pkgs.python3
         (pkgs.python3.withPackages python-packages)
     ];
